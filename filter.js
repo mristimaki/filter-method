@@ -21,6 +21,13 @@ const people = [
   },
 ];
 
+const oldEnough = people.filter(person => person.age >= 21);
+console.log(oldEnough);
+
+// since this callback function is arbitrary, we can change 
+// the "person" into just "p" instead to make it shorter and cleaner.
+const paul = people.filter(p => p.name === "Paul")[0];
+console.log(paul);
 
 // Complex Filtering
 const students = [
