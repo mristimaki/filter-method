@@ -66,5 +66,7 @@ const students = [
 const has5yearsExp = skill => skill.yrsExperience >= 5;
 const hasStongSkills = student => student.skills.filter(has5yearsExp).length > 0;
 const candidates = students.filter(hasStongSkills);
+const names = candidates.map(function (students) {return students.name});
 
 console.log(candidates);
+console.log(names);
